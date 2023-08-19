@@ -1,9 +1,11 @@
-package com.example.retrofitexample
+package com.example.retrofitexample.retrofit
 
+import com.example.retrofitexample.model.Comment
+import com.example.retrofitexample.model.Post
 import retrofit2.Call
 import retrofit2.http.*
 
-interface JSONPlaceholderAPI
+interface ApiService
 {
     //    Calling this URL https://jsonplaceholder.typicode.com/posts to get posts.
     //    This part (https://jsonplaceholder.typicode.com/) of the URL can be declared as baseURL
