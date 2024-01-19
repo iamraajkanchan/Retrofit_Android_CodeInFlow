@@ -8,7 +8,7 @@ class AppViewModelFactory : ViewModelProvider.Factory {
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
             return MainViewModel() as T
         } else {
-            throw NullPointerException("${modelClass.name} is an incompatible ViewModel")
+            throw IllegalArgumentException("Local and anonymous classes can not be ViewModels")
         }
     }
 }
